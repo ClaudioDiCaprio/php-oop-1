@@ -17,4 +17,26 @@ $movie =[
     new Movie("Universal Pictures"," Back to the Future III"," Michael J. Fox "," Christopher lloyd"," USA"," 1990"," Robert Zemeckis"," Bob Gale")
 ];
 
+// var_dump($movie);
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+<body>
+    <h1>Back to the future's revival</h1>
+    <?php foreach($movie as $mov_ie){?>
+        <div>
+            <h3><?php echo "-{$mov_ie->originalTitle}-" ?></h3>
+            <p><?php  echo "Main Actor:{$mov_ie->mainChar}, Second Actor:{$mov_ie->secondChar}." ?></p>
+            <p><?php echo "{$mov_ie->production},{$mov_ie->productionCountry},{$mov_ie->poductionYear} ." ?></p>
+            <p><?php echo"Director:{$mov_ie->movieDirector}, Script: {$mov_ie->script} ." ?></p>
+        </div>
+    <?php } ?>
+</body>
+</html>
+
