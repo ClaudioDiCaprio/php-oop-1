@@ -33,7 +33,7 @@ $movie =[
         <div>
             <h3><?php echo "-{$mov_ie->originalTitle}-" ?></h3>
             <ul>
-                <li><?php  echo "Main Actor:{$mov_ie->getNome()}, Second Actor:{$mov_ie->secondChar}." ?></li>
+                <li><?php  echo "Main Actor:{$mov_ie->getName()}, Second Actor:{$mov_ie->secondChar}." ?></li>
                 <li><?php echo "{$mov_ie->production},{$mov_ie->productionCountry},{$mov_ie->poductionYear} ." ?></li>
                 <li><?php echo"Director:{$mov_ie->movieDirector}, Script: {$mov_ie->script} ." ?></li>
             </ul>

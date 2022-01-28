@@ -14,7 +14,7 @@ class Movie{
 
     public function __construct($_production, $_originalTitle, $_mainA, $_secondChar,  $_productionCountry, $_poductionYear, $_movieDirector, $_script)
     {   
-        $this->setNome($_mainA);
+        $this->setName($_mainA);
         $this->production = $_production;
         $this->originalTitle = $_originalTitle;
         $this->secondChar = $_secondChar;
@@ -24,13 +24,13 @@ class Movie{
         $this->script = $_script;
     }
 
-    public function setNome($_mainA)
+    public function setName($_mainA)
 
     {   if(strlen($_mainA) === strlen(" Michael J. Fox ") ){
             $this->mainChar = $_mainA;
         }
     }
-    public function getNome()
+    public function getName()
     {
         return $this->mainChar;
     }
