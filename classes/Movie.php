@@ -26,7 +26,7 @@ class Movie{
 
     public function setNome($_mainA)
 
-    {   if(strlen($_mainA) == strlen(" Michael J. Fox ") ){
+    {   if(strlen($_mainA) === strlen(" Michael J. Fox ") ){
             $this->mainChar = $_mainA;
         }
     }
