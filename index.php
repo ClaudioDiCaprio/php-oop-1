@@ -12,7 +12,7 @@ require_once __DIR__ .'/classes/Movie.php';
 //ANZICHÉ DEFINIRLI INDIVIDUALMENTE,COME FATTO SOPRA, LI SPRIGIONIAMO COME UN ARRAY
 
 $movie =[
-    new Movie("Universal Pictures"," Back to the Future"," Michael J. Fox "," Christopher lloyd"," USA"," 1985"," Robert Zemeckis"," Robert Zemeckis"),
+    new Movie("Universal Pictures"," Back to the Future","Michael J. Fox"," Christopher lloyd"," USA"," 1985"," Robert Zemeckis"," Robert Zemeckis"),
     new Movie("Universal Pictures"," Back to the Future II"," Michael J. Fox "," Christopher lloyd"," USA"," 1989"," Bob Gale"," Robert Zemeckis/Bob Gale"),
     new Movie("Universal Pictures"," Back to the Future III"," Michael J. Fox "," Christopher lloyd"," USA"," 1990"," Robert Zemeckis"," Bob Gale")
 ];
@@ -33,11 +33,11 @@ $movie =[
         <div>
             <h3><?php echo "-{$mov_ie->originalTitle}-" ?></h3>
             <ul>
-                <li><?php  echo "Main Actor:{$mov_ie->mainChar}, Second Actor:{$mov_ie->secondChar}." ?></li>
+                <li><?php  echo "Main Actor:{$mov_ie->getNome()}, Second Actor:{$mov_ie->secondChar}." ?></li>
                 <li><?php echo "{$mov_ie->production},{$mov_ie->productionCountry},{$mov_ie->poductionYear} ." ?></li>
                 <li><?php echo"Director:{$mov_ie->movieDirector}, Script: {$mov_ie->script} ." ?></li>
             </ul>
-        </div>
+        </div> 
     <?php } ?>
 </body>
 </html>
