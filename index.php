@@ -32,9 +32,11 @@ $movie =[
     <?php foreach($movie as $mov_ie){?>
         <div>
             <h3><?php echo "-{$mov_ie->originalTitle}-" ?></h3>
-            <p><?php  echo "Main Actor:{$mov_ie->mainChar}, Second Actor:{$mov_ie->secondChar}." ?></p>
-            <p><?php echo "{$mov_ie->production},{$mov_ie->productionCountry},{$mov_ie->poductionYear} ." ?></p>
-            <p><?php echo"Director:{$mov_ie->movieDirector}, Script: {$mov_ie->script} ." ?></p>
+            <ul>
+                <li><?php  echo "Main Actor:{$mov_ie->mainChar}, Second Actor:{$mov_ie->secondChar}." ?></li>
+                <li><?php echo "{$mov_ie->production},{$mov_ie->productionCountry},{$mov_ie->poductionYear} ." ?></li>
+                <li><?php echo"Director:{$mov_ie->movieDirector}, Script: {$mov_ie->script} ." ?></li>
+            </ul>
         </div>
     <?php } ?>
 </body>
